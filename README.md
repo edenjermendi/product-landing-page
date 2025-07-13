@@ -18,7 +18,7 @@ The goal is to create a responsive Product Landing Page that meets the following
 - [See the freeCodeCamp demo project](https://product-landing-page.freecodecamp.rocks/) for an example of the expected functionality.  
   > *Note: This project is built from scratch and is not a copy of the demo.*
 
-- [View my interpretation here]() — built using the previous example as inspiration, but with my own choices and changes.
+- [View my interpretation here](https://edenjermendi.github.io/product-landing-page/) — built using the previous example as inspiration, but with my own choices and changes.
 
 ## How to Use
 
