@@ -24,6 +24,8 @@ The goal is to create a responsive Product Landing Page that meets the following
 
 [Open my project live via GitHub Pages here.](https://edenjermendi.github.io/product-landing-page/)
 
+> *⚠️ Note: The form action points to a dummy URL for freeCodeCamp testing purposes and does not submit real data.*
+
 ## Technologies Used
 
 - HTML5
