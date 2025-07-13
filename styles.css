@@ -1,4 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+}
+
 #header-img {
     width: 80px;
     height: 50px;
 }
+
+/* Entire header in a row */
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Brand container (logo + name) */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #007BFF;
+}
+
+body {
+  margin: 0;
+  padding-top: 80px; /* adjust if your header height changes */
+  font-family: sans-serif;
+}
+
+
+
