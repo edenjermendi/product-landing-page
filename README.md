@@ -22,7 +22,7 @@ The goal is to create a responsive Product Landing Page that meets the following
 
 ## How to Use
 
-[Open my project live via GitHub Pages here.]()
+[Open my project live via GitHub Pages here.](https://edenjermendi.github.io/product-landing-page/)
 
 ## Technologies Used
 
