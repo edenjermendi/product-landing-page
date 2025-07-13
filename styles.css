@@ -8,7 +8,7 @@ body {
   margin: 0;
   padding-top: 80px; 
   font-family: sans-serif;
-
+  background-color: #f7f7f7;
 }
 
 .container {
@@ -47,7 +47,9 @@ p {
   top: 0;
   width: 100%;
   z-index: 999;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  background-color: #f9f9f9;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 /* Brand container (logo + name) */
@@ -83,7 +85,7 @@ p {
 }
 
 .signup {
-  background-color: #f2f2f2;
+  background-color: #e4e4e4;
   padding: 3rem 1rem;
   text-align: center;
 }
