@@ -7,73 +7,68 @@
     <title>Product Landing Page</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    
     <header id="header">
-        <div class="container">
+      <div class="container">
         <div class="brand">
-        <img id="header-img" alt="android logo" src="https://www.svgrepo.com/show/509016/android.svg" />
-        <span class="brand-name">SimpleOS</span>
+          <img id="header-img" alt="android logo" src="https://www.svgrepo.com/show/509016/android.svg" />
+          <span class="brand-name">SimpleOS</span>
         </div>
         <nav id="nav-bar">
-            <ul class="nav-list">
-                <li><a class="nav-link" href="#features">Features</a></li>
-                <li><a class="nav-link" href="#why">Why SimpleOS</a></li>
-                <li><a class="nav-link" href="#download">Download</a></li>
-            </ul>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#features">Features</a></li>
+            <li><a class="nav-link" href="#why">Why SimpleOS</a></li>
+            <li><a class="nav-link" href="#download">Download</a></li>
+          </ul>
         </nav>
-        </div>
+      </div>
     </header>
 
-  
-    <section class="signup" id="section-signup">
-        <h2>Stay Updated on SimpleOS</h2>
+    <section class="section-card" id="section-signup">
+      <div class="container">
+        <h2>Stay Updated on <span class="highlight">SimpleOS</span></h2>
         <p>Sign up to be notified about the latest developments and news about SimpleOS.</p>
-    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
-    <input
-      type="email"
-      id="email"
-      name="email"
-      placeholder="Enter your email address"
-      required
-    />
-    <input
-      type="submit"
-      id="submit"
-      value="Get Started"
-    />
-    </form>
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+          <input type="submit" id="submit" value="Get Started" />
+        </form>
+      </div>
     </section>
 
-    <section class="features" id="features">
+    <section class="section-card" id="features">
+      <div class="container">
         <h2>SimpleOS Features</h2>
-        <p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor </p>
+        <p>I'm keeping the bold colours and playful shapes from the Lollipop and KitKat era of Android... (shortened)</p>
+      </div>
     </section>
 
-    <section class="video-section">
+    <section class="section-card" id="video">
+      <div class="container">
         <h2>Inspired by Material Design c. 2015</h2>
         <p>Talk about what elements I would keep or modify for hypothetical SimpleOS</p>
         <div class="video">
-        <iframe width="560" height="315" 
-        id="video"
-        src="https://www.youtube.com/embed/cQzien5H2Do?si=-J89-zvVfUPbZ7bH" title="YouTube video player" 
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/cQzien5H2Do?si=-J89-zvVfUPbZ7bH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
+      </div>
     </section>
 
-    <section class="why" id="why">
+    <section class="section-card" id="why">
+      <div class="container">
         <h2>Why SimpleOS?</h2>
-        <p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit...</p>
+      </div>
     </section>
 
-    <section class="download" id="download">
+    <section class="section-card" id="download">
+      <div class="container">
         <h2>Try out SimpleOS today!</h2>
-        <p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor </p>
-        <p>Click <a href="#download">here</a> to try SimpleOs out today!</p>
-    </section>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit...</p>
+        <p>Click <a href="#download">here</a> to try SimpleOS out today!</p>
+      </div>
     </section>
   </body>
 </html>
-

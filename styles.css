@@ -1,3 +1,4 @@
+/* 1. Reset & Global Styles */
 * {
   box-sizing: border-box;
 }
@@ -6,22 +7,15 @@ body {
   text-align: center;
   font-size: 16px;
   margin: 0;
-  padding-top: 80px; 
-  font-family: sans-serif;
-  background-color: #f7f7f7;
+  padding-top: 80px;
+  background-color: #eeeeee;
+  font-family: Roboto, sans-serif;
 }
 
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0 40px;
-}
-
-#header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-    flex-wrap: wrap;
+h1, h2, h3 {
+  font-family: 'Roboto Serif', serif;
+  font-weight: 500;
+  margin-top: 0;
 }
 
 h2 {
@@ -30,29 +24,40 @@ h2 {
 
 p {
   font-size: 1rem;
+  margin: 0.5rem 0;
 }
 
-
-#header-img {
-    width: 80px;
-    height: 50px;
+/* 2. Layout Containers */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
-/* Entire header in a row */
+/* 3. Header */
 #header {
-  overflow-x: auto;
-  padding: 1rem 2rem;
-  background-color: #fff;
   position: fixed;
   top: 0;
   width: 100%;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  border-bottom: 2px solid #dddddd;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   z-index: 999;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
-  background-color: #f9f9f9;
-  border-bottom: 1px solid #e5e5e5;
 }
 
-/* Brand container (logo + name) */
+#header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#header-img {
+  width: 80px;
+  height: 50px;
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -62,7 +67,7 @@ p {
 .brand-name {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
+  color: #212121;
 }
 
 .nav-list {
@@ -84,29 +89,44 @@ p {
   color: #007BFF;
 }
 
-.signup {
-  background-color: #e4e4e4;
-  padding: 3rem 1rem;
+/* 4. Reusable Card Sections */
+.section-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  padding: 2rem 1.5rem;
+  margin: 2rem auto;
+  max-width: 900px;
   text-align: center;
+  transition: box-shadow 0.3s ease;
+  border-left: 6px solid #2196F3;
+  padding-left: 1.5rem;
 }
 
-.signup h2 {
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
-  color: #111;
+.section-card:hover {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
-.signup p {
-  margin-bottom: 2rem;
-  color: #333;
-  font-size: 1rem;
+.section-card h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #212121;
+  margin-bottom: 0.5rem;
 }
 
+.section-card p {
+  color: #424242;
+}
+
+
+
+/* 5. Form */
 #form {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  margin-top: 1rem;
 }
 
 #email {
@@ -134,22 +154,20 @@ p {
   background-color: #005ec3;
 }
 
+/* 6. Media Queries */
 @media (max-width: 768px) {
   #header .container {
     flex-direction: column;
     align-items: center;
   }
+
   .nav-list {
     flex-direction: column;
     gap: 1rem;
   }
 
-  .signup h2 {
+  .section-card h2 {
     font-size: 1.5rem;
-  }
-
-  .signup p {
-    font-size: 0.95rem;
   }
 
   #email {
@@ -158,12 +176,9 @@ p {
 
   #form {
     width: 100%;
-    flex-direction: column;
   }
 
   body {
     padding-top: 160px;
   }
 }
-
-
